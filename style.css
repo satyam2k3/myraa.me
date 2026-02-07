@@ -5,7 +5,10 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("heart-bg.jpg");
+    background-size: cover;
+    background-position: center;
     font-family: "Pixelify Sans", sans-serif;
+    overflow: hidden;
 }
 
 /* Envelope Screen */
@@ -136,4 +139,56 @@ display: inline-block;
     padding: 10px 20px;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
+}
+
+/* Mobile - iPhone screens */
+@media (max-width: 480px) {
+    #envelope {
+        width: 120px;
+    }
+
+    #envelope-container p {
+        font-size:30px;
+    }
+
+    .letter-window {
+        width: 95vw;
+        padding: 8px 8px 0 8px;
+        padding-top: 100px;
+        aspect-ratio: 3/2;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 19px;
+        padding: 0 8px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .cat {
+        width: 100px;
+        margin: 5px 0;
+    }
+
+    .letter-window.final .cat {
+        width: 80px;
+    }
+
+    .btn,
+    .yes-btn,
+    .no-btn {
+        width: 60px;
+    }
+
+    .buttons {
+        gap: 15px;
+    }
+
+    .final-text {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
 }
